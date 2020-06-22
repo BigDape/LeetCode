@@ -1,4 +1,4 @@
-start "C:\Windows\System32\cmd.exe"
+rem start "C:\Windows\System32\cmd.exe"
 cd  /d D:
 cd D:\LeetCode\zsg
 git add .
