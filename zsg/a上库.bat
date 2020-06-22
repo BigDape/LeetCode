@@ -1,8 +1,12 @@
 rem start "C:\Windows\System32\cmd.exe"
 cd  /d D:
 cd D:\LeetCode\zsg
+set varyear = %date:~0,4%
+set varmonth = %date:~5,2%
+set varday = %date:~8,2%
+set var = %varyear%,%varmonth%, %varday%
+
 git add .
-set var = date:~6,10
-git commit -m "echo var"
+git commit -m "^%var^%"
 git push
 pause
